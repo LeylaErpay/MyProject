@@ -25,7 +25,7 @@ namespace WebAPI.Controllers
             _productService = productService;
         }
 
-        [HttpGet("getall")]
+        [HttpGet("GetAll")]
         public IActionResult GetAll()
         {
             
@@ -39,7 +39,7 @@ namespace WebAPI.Controllers
 
         }
 
-        [HttpPost("add")]
+        [HttpPost("Add")]
         public IActionResult Add(Product product)
         {
             var result = _productService.Add(product);
