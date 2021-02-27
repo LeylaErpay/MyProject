@@ -26,7 +26,7 @@ namespace Business.Concrete
             _categoryService = categoryService;
         }
 
-        //22.15 DERSTEYİZ
+        
 
         [ValidationAspect(typeof(ProductValidator))]
         public IResult Add(Product product)
@@ -44,10 +44,6 @@ namespace Business.Concrete
             _productDal.Add(product);
 
             return new SuccessResult(Messages.ProductAdded);
-
-
-
-            //23:10 Dersteyiz
         }
 
 
